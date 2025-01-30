@@ -8,9 +8,9 @@ The images below are the user interface of the application that has been created
 | **UI of the application** |
 |:-------------------------:|
 
-| ![Group landing](https://github.com/user-attachments/assets/347552d4-0945-4be6-8481-5bffa5baada2) | ![Group 169](https://github.com/user-attachments/assets/640f23c6-ab1f-41ec-9216-9bc2329650d7) | ![Group 171](https://github.com/user-attachments/assets/f7bde71b-6834-4d88-a5fb-839e04c4b33f)|
+| ![braile](https://github.com/user-attachments/assets/a60ba415-7315-4bf3-9b9d-10c220612b96) | ![braile2](https://github.com/user-attachments/assets/84c4d235-092a-4bac-ae51-6e24567637fb) | ![braile3](https://github.com/user-attachments/assets/af1c46e8-8987-48ac-bead-44350eb94aad) |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-| ![Group home](https://github.com/user-attachments/assets/c1781ee7-c787-424c-9ba0-a7e44e768c0a) | ![Group today](https://github.com/user-attachments/assets/3feebc33-33b8-48d1-a10c-94c794af87da) | ![Group Profile](https://github.com/user-attachments/assets/d3936dfa-06d4-4d9f-97f4-d5aa88055cb6)|
-|![Group count 1](https://github.com/user-attachments/assets/983354bc-e3e3-40a4-86c0-7a22ddf980aa) | ![Group count 2](https://github.com/user-attachments/assets/887bb2b7-af99-43af-b1c3-d8339ba70562) | ![Group add](https://github.com/user-attachments/assets/53acd19d-e56f-4c5b-b28e-6c82a205c4d6) |
+|![braile4](https://github.com/user-attachments/assets/f5c63f81-15b4-4b0c-8159-92ad2d985650)|![braile5](https://github.com/user-attachments/assets/56405d66-a06e-4978-a11a-393b10504fe8)|![braile6](https://github.com/user-attachments/assets/72518cdc-2dee-4d7e-8831-a66fb0be29a5)|
+|![braile7](https://github.com/user-attachments/assets/8a44abac-1ad0-4f2c-a49e-0ab3d6b24bae)|![braile8](https://github.com/user-attachments/assets/885d5ff5-98a7-4018-bdc4-e89f4b58653c)| |
 
 
