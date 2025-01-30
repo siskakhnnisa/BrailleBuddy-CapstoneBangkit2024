@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "219598700488",
+    "project_id": "brailleapp-d8699",
+    "storage_bucket": "brailleapp-d8699.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219598700488:android:77bfd03c294df728e38afd",
+        "android_client_info": {
+          "package_name": "com.example.brailleapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC92wcDXkBqsXMEEAqsnWQSHtpuEqvNM9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

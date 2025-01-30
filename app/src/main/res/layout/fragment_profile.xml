@@ -1,0 +1,272 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryVariant"
+    tools:context=".ui.profile.ProfileFragment">
+    <!--    android:background="?attr/colorOnSecondary"-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/header" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:alpha="1"
+            android:scaleType="fitStart"
+            android:src="@drawable/bg_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="@string/profile_image"
+            android:src="@drawable/ic_profile"
+            android:alpha="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            tools:alpha="100"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:alpha="1"
+            android:fontFamily="@font/medium"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp"
+            android:text="@string/jake_sim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_profile_image"
+            tools:alpha="100"
+            tools:text="Username"/>
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:alpha="1"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:text="@string/jake_sim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:alpha="100"
+            tools:text="Username"/>
+
+        <!-- Notification Option -->
+        <LinearLayout
+            android:id="@+id/linear_dark_mode"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@drawable/bg_border_language"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_email"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_dark_mode"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_darkmode"
+                android:background="@drawable/bg_darkmode"
+                android:contentDescription="@string/notification_icon" />
+
+            <Switch
+                android:id="@+id/switch_dark_mode"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dark_mode"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:layout_marginStart="18dp"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_border_language"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_dark_mode"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_a"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_language"
+                android:padding="8dp"
+                android:background="@drawable/bg_language"
+                android:contentDescription="@string/notification_icon" />
+
+            <TextView
+                android:id="@+id/tv_language"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="@string/language"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_a"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_arrow_right"
+                android:contentDescription="@string/arrow_icon" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/bg_border_language"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_a"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iv_b"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_editprofile"
+                android:padding="6dp"
+                android:contentDescription="@string/notification_icon"
+                android:src="@drawable/ic_edit_profile" />
+
+            <TextView
+                android:id="@+id/tv_changepassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="@string/edit_profile"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_b"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/arrow_icon"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/bg_border_language"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_b"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iv_c"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_logout"
+                android:padding="8dp"
+                android:contentDescription="@string/notification_icon"
+                android:src="@drawable/ic_logout" />
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="@string/sign_out"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_c"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/arrow_icon"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
